@@ -1,0 +1,11 @@
+import java.util.*;
+import java.util.stream.*;
+public class startwithone {
+    public static void main(String args[]) {
+            List<Integer> myList = Arrays.asList(180,175,11,8,49,32);
+            myList.stream()
+                  .map(s -> s + "") // Convert integer to String
+                  .filter(s -> s.startsWith("1"))
+                  .forEach(System.out::println);
+    }
+}
